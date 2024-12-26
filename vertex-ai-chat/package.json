@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google-cloud/aiplatform": "^3.34.0",
     "@google-cloud/vertexai": "^1.9.2",
     "next": "15.1.2",
     "react": "^19.0.0",
