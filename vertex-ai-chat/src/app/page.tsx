@@ -20,12 +20,18 @@ export default function Home() {
         body: JSON.stringify({ message }),
       });
       const data = await response.json();
+      const data2 = data.response;
+      console.log(data2)
+      console.log(typeof(data2))
+      const aiResponse =
+        JSON.parse(data2).candidates?.[0]?.content?.parts?.[0]?.text || "AIからの応答がありません。";
+      console.log(aiResponse)
 
       if (data.error) {
         throw new Error(data.error);
       }
 
-      setMessages((prev) => [...prev, { user: "AI", text: data.response }]);
+      setMessages((prev) => [...prev, { user: "AI", text: aiResponse }]);
     } catch (error) {
       console.error("Error sending message:", error);
       setMessages((prev) => [...prev, { user: "AI", text: "エラーが発生しました。" }]);

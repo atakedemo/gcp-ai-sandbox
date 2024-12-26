@@ -1,0 +1,53 @@
+{
+	"candidates": [
+		{
+			"content": {
+				"role": "model",
+				"parts": [
+					{
+						"text": "I'm doing well, thank you for asking! How can I help you today? 😊 \n"
+					}
+				]
+			},
+			"finishReason": "STOP",
+			"safetyRatings": [
+				{
+					"category": "HARM_CATEGORY_HATE_SPEECH",
+					"probability": "NEGLIGIBLE",
+					"probabilityScore": 0.041503906,
+					"severity": "HARM_SEVERITY_NEGLIGIBLE",
+					"severityScore": 0.028930664
+				},
+				{
+					"category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+					"probability": "NEGLIGIBLE",
+					"probabilityScore": 0.056640625,
+					"severity": "HARM_SEVERITY_NEGLIGIBLE",
+					"severityScore": 0.03857422
+				},
+				{
+					"category": "HARM_CATEGORY_HARASSMENT",
+					"probability": "NEGLIGIBLE",
+					"probabilityScore": 0.061767578,
+					"severity": "HARM_SEVERITY_NEGLIGIBLE",
+					"severityScore": 0.01361084
+				},
+				{
+					"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+					"probability": "NEGLIGIBLE",
+					"probabilityScore": 0.14257813,
+					"severity": "HARM_SEVERITY_NEGLIGIBLE",
+					"severityScore": 0.028442383
+				}
+			],
+			"avgLogprobs": -0.1223025435493106,
+			"index": 0
+		}
+	],
+	"usageMetadata": {
+		"promptTokenCount": 17,
+		"candidatesTokenCount": 21,
+		"totalTokenCount": 38
+	},
+	"modelVersion": "gemini-1.5-flash-001"
+}
